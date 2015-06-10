@@ -3,10 +3,12 @@
 		<div class="event">
 			<div class="event__cover" style="background-image: url({{model.cover}})">
 				<div class="remove-cover" {{action 'removeCover' event}}>&times;</div>
-				<div class="upload-cover">Загрузить изображение</div>
+				<label class="upload-cover">
+					{{cover-upload url="/upload"}}
+					<span>Загрузить обложку</span>
+				</label>
 			</div>
 			<div class="event__info">
-
 				<div class="input-container">
 					<label class="label label--sm">Назавание события</label>
 					<div class="symbol-counter headerSymbolCounter">0 / 120</div>
@@ -32,7 +34,6 @@
 						{{input type="number" class="input-text" value=model.age}}
 					</div>
 				</div>
-
 				<div class="flex">
 					<label>
 						{{input type="checkbox" name="model.special" checked=model.special}}

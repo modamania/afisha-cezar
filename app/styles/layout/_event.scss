@@ -41,7 +41,6 @@
 .upload-cover {
 	position: absolute;
 	text-align: center;
-	color: $white;
 	background-color: $black;
 	cursor: pointer;
 	transition: background-color 0.1s ease-out;
@@ -57,6 +56,7 @@
 	padding: 0 4px 6px 4px;
 	width: 32px;
 	font-size: em(28px);
+	color: $white;
 }
 
 .upload-cover {
@@ -64,6 +64,10 @@
 	left: 0;
 	width: 100%;
 	padding: 12px 0 12px 0;
+
+	span {
+		color: $white;
+	}
 }
 
 .symbol-counter {
