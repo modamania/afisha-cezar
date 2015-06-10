@@ -1,0 +1,50 @@
+.file-row	{
+	@extend  .flex;
+	background-color: $white;
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 
+							0px 2px 4px 0px rgba(0,0,0,0.24);
+	
+}
+
+.file-row + .file-row {
+	margin-top: 12px;
+}
+
+.file-row__preview {
+	@extend .flex-cell;
+	@extend .flex-cell--auto;
+}
+
+.file-row__image {
+	width: 100%;
+	max-width: 121px;
+	max-height: 89px;
+	overflow: hidden;
+	
+	img {
+		display: block;		
+	}
+}
+
+.file-row__info {
+	@extend .flex-cell;
+}
+
+.file-row__preview,
+.file-row__info {
+	padding: 11px;
+}
+
+.file-row__description {
+	font-size: $fz-md;
+	margin-bottom: 16px;
+}
+
+.file-row__actions {
+	width: 100%;
+	text-align: right;
+}
+
+.add-image {
+	margin-top: 12px;
+}

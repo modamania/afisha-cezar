@@ -1,0 +1,44 @@
+<form id="event" {{action 'save' on='submit'}}>
+	<div class="wrapper paper">
+		<div class="event">
+			<div class="event__cover" style="background-image: url({{model.cover}})">
+				<div class="remove-cover" {{action 'removeCover' event}}>&times;</div>
+				<div class="upload-cover">Загрузить изображение</div>
+			</div>
+			<div class="event__info">
+
+				<div class="input-container">
+					<label class="label label--sm">Назавание события</label>
+					<div class="symbol-counter headerSymbolCounter">0 / 120</div>
+					{{input type="text"  class="input-text input--header" placeholder="Название события..." value=model.title}}
+				</div>
+				<div class="input-container">
+					<label class="label label--sm">Краткое описание</label>
+					<div class="symbol-counter headerSymbolCounter">0 / 120</div>
+					{{textarea class="textarea textarea--no-resize" placeholder="Краткое описание события..." rows="1" value=model.review}}
+				</div>
+
+				<div class="event__settings">
+					<div class="input-container">
+						<label class="label label--sm">Дата проведения</label>
+						{{input type="date" class="input-text" value=model.date}}
+					</div>
+					<div class="input-container">
+						<label class="label label--sm">Место проведения</label>
+						<input type="text" class="input-text" placeholder="Дата..." value="Фетисов Арена">
+					</div>
+					<div class="input-container">
+						<label class="label label--sm">Возростной ценз</label>
+						{{input type="number" class="input-text" value=model.age}}
+					</div>
+				</div>
+
+				<div class="flex">
+					<label>
+						{{input type="checkbox" name="model.special" checked=model.special}}
+					Выбор редакции</label>
+				</div>
+			</div>
+		</div>			
+	</div>
+</form>

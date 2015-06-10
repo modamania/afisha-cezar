@@ -6,6 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('events', { path: 'events' }, function() {
+    this.route('edit', { path: ':event_id/edit' });
+    this.route('new'); 
+  });
+  this.route('evetns');
 });
 
 export default Router;

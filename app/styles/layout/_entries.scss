@@ -1,0 +1,65 @@
+// ==================================================
+// Posts list
+// ==================================================
+.entries__public-day {
+	color: $light-gray;
+	margin: 0 20px 12px 20px;
+}
+
+.entries__item {
+	@extend .flex;
+	height: 48px;
+	padding-left: 20px;
+
+	&:hover {
+		.entry-action--delete,
+		.entry-action--edit {
+			display: block;
+		}
+	}
+}
+
+.entries__title {
+	@extend .flex;
+	@extend .flex-cell;
+	@extend .flex--center;
+
+	font-weight: 600;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding-right: 20px;
+}
+
+.entries__title--text {
+	font-weight: 500;
+	font-weight: normal;
+	font-size: $fz-md;
+}
+
+.entries__description {
+	font-size: $fz-sm;
+	color: $light-gray;
+	padding-top: 2px;
+}
+
+.entry-actions {
+	@extend .flex-cell--auto;
+	@extend .flex-cell--center;
+
+	.entry-action--delete,
+	.entry-action--edit {
+		display: none;
+	}
+}
+
+.entry-action {
+	@include size(24px);
+	float: left;
+	margin-right: 12px;
+	border-radius: 50%;
+	
+	&:active {
+		background-color: $gray-300;
+	}
+}

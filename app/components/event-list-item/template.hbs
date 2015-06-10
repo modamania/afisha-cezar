@@ -1,0 +1,21 @@
+<li class="event-list__item paper">
+	<div class="event-item__menu">
+		{{#link-to 'events.edit' event}}
+			<div class="event-item__header">Концерт</div>
+			<div class="event-item__menu-title">{{event.title}}</div>
+		{{/link-to}}
+		<div class="event-item__actions">
+			<div class="event-item__action event-action--delete icon icon48--close-black" {{action 'delete' event}}></div> 		
+			<div class="event-item__action event-action--public icon icon48--checked-black {{if event.visible 'checked' 'unchecked'}}" {{action 'isVisible' event}}></div>
+		</div>
+	</div>
+	
+{{!-- TODO: доделать выпадающую часть --}}
+{{!-- 	<div class="event-item" style="display: none">
+		<div class="event-item__cover" style="background-image: url({{event.cover}})"></div>
+		<div class="event-item__info">
+			<span class="event-item__title">{{event.title}}</span>
+			<span class="event-item__content">{{event.review}}</span>
+		</div>
+	</div> --}}
+</li>

@@ -1,0 +1,59 @@
+// ==================================================
+// Buttons
+// ==================================================
+$base-transition: all 0.2s linear;
+
+.btn {
+	padding: 5px 16px 7px 16px;
+	background-color: $light-gray;
+	border:none;
+	background-color: transparent;
+	cursor: pointer;
+	color: $black;
+	font-size: $fz-md;
+	line-height: em(20px);
+	border-radius: $base-radius;
+	transition: box-shadow 0.1s ease-out;
+	line-height: 24px;
+}
+
+.btn--gray {
+	background-color: $gray-300;
+	
+	&:hover {
+		// background-color: rgba($gray-300, 0.5);
+		box-shadow: $shadow-sm;
+	}
+
+	&:active {
+		// background-color: $gray-300;	
+		box-shadow: none;
+	}
+}
+
+.btn--blue {
+	background-color: $violet;
+	color: $white;
+
+	&:hover {
+		box-shadow: $shadow-sm;
+	}
+
+	&:active {
+		box-shadow: none;
+	}
+}
+
+.btn--full {
+	width: 100%;
+	text-align: center;
+}
+
+.btn--md {
+	padding: 6px 8px;
+	font-size: $fz-sm;
+}
+
+.btn--lg {
+	padding: 12px 16px 12px 16px;
+}

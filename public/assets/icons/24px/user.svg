@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 276 + Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Cezar-v.1.3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="user" sketch:type="MSArtboardGroup" transform="translate(-15.000000, -15.000000)">
+            <g id="Rectangle-276-Copy-+-Rectangle-276-+-Shape" sketch:type="MSLayerGroup">
+                <g id="Rectangle-276-+-Shape" transform="translate(12.000000, 12.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-276" x="0" y="0" width="24" height="24"></rect>
+                    <path d="M12,11 C14.21,11 16,9.21 16,7 C16,4.79 14.21,3 12,3 C9.79,3 8,4.79 8,7 C8,9.21 9.79,11 12,11 L12,11 Z M12,13 C8.99625,13 3,14.5633333 3,17.6666667 L3,20 L21,20 L21,17.6666667 C21,14.5633333 15.00375,13 12,13 L12,13 Z" id="Shape" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

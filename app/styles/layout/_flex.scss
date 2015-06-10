@@ -1,0 +1,83 @@
+// ==================================================
+// Flex-flex
+// ==================================================
+// Контейнес с сеткой
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+ 
+// Ячейка сетки
+.flex-cell {
+	flex: 1;
+}
+
+// https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/flex.css
+
+// Флексивная ячейка
+.flex--flexCells > .flex-cell {
+	display: flex;
+}
+
+// Align per row
+.flex--top {
+	align-items: flex-start;
+}
+
+.flex--bottom {
+	align-items: flex-end;
+}
+ 
+.flex--center {
+	align-items: center;
+}
+
+.flex--justifyCenter {
+	justify-content: center;
+}
+
+// Align per cell 
+.flex-cell--top {
+	align-self: flex-start;
+}
+
+.flex-cell--bottom {
+	align-self: flex-end;
+}
+
+.flex-cell--center {
+	align-self: center;
+}
+
+.flex-cell--auto {
+	flex: none;
+}
+
+// Ширины колонок
+.flex--fit > .flex-cell {
+	flex: 1;
+}
+
+.flex--full > .flex-cell {
+	flex: 0 0 100%;
+}
+
+.flex--1of2 > .flex-cell {
+	flex: 0 0 50%;
+}
+
+.flex--1of3 > .flex-cell {
+	flex: 0 0 33.3333%;
+}
+
+.flex--1of4 > .flex-cell {
+	flex: 0 0 25%;
+}
+
+// Межколоночное растояние
+.flex--gutters {
+  margin: -1em 0 1em -1em;
+}
+	.flex--gutters > .flex-cell {
+  	padding: 1em 0 0 1em;
+	}

@@ -1,0 +1,86 @@
+// ==================================================
+// Event-list-item
+// ==================================================
+.event-list__item {
+	@extend .cf;
+}
+
+.event-item {
+	@extend .flex;
+
+	padding: 16px;
+	height: 240px;
+}
+
+.event-item__cover {
+	flex: 0 0 200px;
+	height: auto;
+	margin-right: 20px;
+	background-size: cover;
+	background-position: center 0;
+	background-color: $gray-200;
+}
+
+.event-item__info {
+	flex: 1;
+}
+
+.event-item__title {
+	display: block;
+	margin-top: 12px;
+	font-size: $h2-size;
+	font-weight: 500;
+}
+
+
+// ==================================================
+// Event-list-item menu
+// ==================================================
+.event-item__menu {
+	display: flex;
+	width: 100%;
+	border-bottom: $base-border;
+
+	a {
+		display: flex;
+		flex: 1;
+		height: 100%;
+		padding: 16px 0 16px 16px;
+	}
+}
+
+.event-item__header {
+	flex: none;
+	font-size: em(13px);
+	margin-right: 48px;
+	color: $light-gray;
+}
+
+.event-item__menu-title {
+	flex: 1;
+	font-weight: 500;
+	margin-right: 16px;
+	text-overflow: ellipsis;
+}
+
+.event-item__actions {
+	flex: none;
+	padding: 16px 16px 16px 0;
+}
+
+.event-item__action {
+	@include size(24px);
+	float: left;
+	margin-left: 12px;
+	border-radius: 50%;
+	opacity: 0.5;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&:active {
+		background-color: $gray-300;
+	}
+}

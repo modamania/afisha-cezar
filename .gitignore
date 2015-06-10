@@ -15,3 +15,12 @@
 /libpeerconnection.log
 npm-debug.log
 testem.log
+
+# soft & os
+.idea
+.DS_Store
+*.sublime-project
+
+# unnecesarry files
+.zip
+.rar

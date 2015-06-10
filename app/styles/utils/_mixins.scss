@@ -1,0 +1,20 @@
+// ==================================================
+// Mixins
+// ==================================================
+// px -> em function
+@function em($px, $base: $base-size) {
+  @if unitless($px) {
+    @warn '#{$px} should be in px, trying to convert.';
+    @return em($px + 0px);
+  } @else if unit($px) == em {
+    @return $px;
+  }
+
+  @return ($px / $base) * 1em;
+};
+
+// calculate size of element ex: @include size(10em);
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}

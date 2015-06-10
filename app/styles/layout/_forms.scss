@@ -1,0 +1,105 @@
+// ==================================================
+// Forms
+// ==================================================
+.input-container {
+	margin: 0 0 $base-spacing 0;
+	padding: 0;
+}
+
+.input-text {
+	width: 100%;
+	border: none;
+	background: transparent;
+
+	border-bottom: $base-border;
+}
+
+// Style modificators
+.input--transparent {
+	background: rgba(255,255,255,0.2);
+	
+	&:hover,
+	&:focus {
+		background: rgba(255,255,255,0.28);				
+	}
+}
+
+.input--header {
+	font-size: $h2-size;
+	font-weight: 800;
+	border-bottom: $base-border;
+	padding-bottom: 8px;
+}
+
+.input--subheader {
+	border-bottom: $base-border;
+	line-height: $base-line-height;
+	padding-bottom: 8px;
+}
+
+// Size modificators
+.input--sm {
+	height: 36px;
+	padding: 0 12px;
+}
+
+.label {
+	color: $light-gray;
+}
+
+.label--sm {
+	font-size: $fz-sm;
+}
+
+.label--bold {
+	color: $black;
+	font-weight: 600;
+}
+
+.label-description {
+	font-size: $fz-xs;
+	line-height: $lh-sm;
+	display: block;
+	color: $light-gray;
+}
+
+.textarea {
+	resize: vertical;
+	overflow: hidden;
+	background-color: transparent;
+	padding: 0;
+	border: none;
+	border-bottom: $base-border;
+	width: 100%;
+	min-height: 24px;
+}
+
+.textarea--md {
+	font-size: $fz-md;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

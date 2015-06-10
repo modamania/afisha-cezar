@@ -1,0 +1,282 @@
+// ==================================================
+// Event
+// ==================================================
+
+.event {
+	@extend .flex;
+}
+
+.event__info {
+	flex: 1;
+	padding: $base-spacing;
+}
+
+.event__settings {
+	display: flex;
+	flex-wrap: wrap;
+	
+	.input-container {
+		flex: 1;
+
+		&:not(:first-child) { // Make the 3 col without margin first el
+			margin-left: 24px; 
+			
+			input {
+				padding-bottom: 3px; // Input type=date is not equal type=text, this fixed it
+			}
+		}
+	}
+}
+
+.event__cover {
+	flex: 0 0 30%;
+	position: relative;
+	background-color: $gray-200;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 0;
+}
+
+.remove-cover,
+.upload-cover {
+	position: absolute;
+	text-align: center;
+	color: $white;
+	background-color: $black;
+	cursor: pointer;
+	transition: background-color 0.1s ease-out;
+
+	&:hover {
+		background-color: $pink;
+	}
+}
+
+.remove-cover {
+	top: 0;
+	right: 0;
+	padding: 0 4px 6px 4px;
+	width: 32px;
+	font-size: em(28px);
+}
+
+.upload-cover {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 12px 0 12px 0;
+}
+
+.symbol-counter {
+	float: right;
+	font-size: $fz-xs;
+	color: $light-gray;
+}
+
+
+// .entry {
+// 	padding: ($base-spacing * 2) 0;	
+// }
+
+// .entry__wrapper {
+// 	max-width: 760px;
+// 	margin: 0 auto;
+// 	padding: 0 $base-spacing;
+// }
+
+// .entry__static {
+// 	margin-bottom: 24px;
+// }
+
+// .entry__header {
+// 	font-size: $h1-size;
+// 	line-height: $lh-sm;
+// 	margin-bottom: 12px;
+// }
+
+// .entry__subheader {
+// 	font-size: $h4-size;
+// 	font-style: italic;
+// }
+
+// .symbol-counter {
+// 	float: right;
+// 	font-size: $fz-xs;
+// 	color: $light-gray;
+// }
+
+// .entry__date {
+// 	margin-bottom: 16px;
+// 	font-size: $fz-xs;
+// 	color: $light-gray;
+// }
+
+// .entry__media {
+// 	padding: 16px;
+// 	margin-bottom: $base-spacing;
+// 	background-color: $gray-200;
+// }
+
+// .entry__image-container {
+// 	position: relative;
+// }
+
+// .entry__images {
+// 	@extend .flex;
+// 	@extend .flex--1of3;
+	
+// 	li {
+// 		@extend .flex-cell;
+// 		margin-bottom: 8px;
+// 		padding-right: 16px;
+
+// 		&:hover {
+// 			.image-menu {
+// 				display: block;
+// 				opacity: 1;
+// 			}
+// 		}
+
+// 		img {
+// 			width: 100%;
+// 		}
+// 	}
+// }
+
+// // Setting image to block width
+// .entry__content {
+// 	img {
+// 		max-width: 100%;
+// 	}
+// }
+
+// .image-menu {
+// 	position: absolute;
+// 	display: none;
+// 	opacity: 0;				
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+//   background-image: linear-gradient(rgba($black, 0.28) 0%, rgba(0, 0, 0, 0) 100%);
+//   // background-image: linear-gradient(-180deg, rgba(42,47,46,0.50) 0%, rgba(0,0,0,0.00) 100%);
+//   height: 48px;
+// }
+
+// .image-remove {
+// 	opacity: 1;
+// 	float: right;
+// 	cursor: pointer;
+// }
+
+// // TODO: move this to partials/_entry-settings.scss
+// .entry__settings {
+// 	height: 48px;
+// 	padding: 8px 0;
+// 	background-color: $gray-200;
+// }
+
+// .settings__container {
+// 	.label {
+// 		color: $black;
+// 		font-weight: 800;
+// 	}
+// }
+
+// .entry__review {
+// 	@extend .flex;
+// 	margin-top: $base-spacing;
+
+// 	.textarea {
+// 		height: ($base-spacing * 3);
+// 		display: block;
+// 		width: 100%;
+// 	}
+// }
+
+// .review__title {
+// 	flex: 0 0 24%;
+// 	padding: 16px;
+// 	background-color: $gray-200;
+
+// 	.label {
+// 		display: block;
+// 		margin-bottom: 8px;
+// 	}
+// }
+
+// .review__text {
+// 	flex: auto;
+// 	padding: 16px;
+// }
+
+// .entry__cover {
+// 	margin-top: $base-spacing;
+// 	max-height: 120px;
+// }
+
+// .cover {
+// 	position: relative;
+// 	max-height: 120px;
+// 	max-width: 120px;
+// 	img {
+// 		display: block;
+// 		max-width: 100%;
+// 	}
+
+// 	&:hover {
+// 		.cover__delete {
+// 			display: block;
+// 		}
+// 	}
+// }
+
+// .cover__upload {
+// 	padding: 16px;
+// }
+
+// .cover__delete {
+// 	position: absolute;
+// 	top: 0;
+// 	right: 0;
+// 	padding: 2px 8px;
+// 	font-size: $fz-md;
+// 	background: rgba(black, 0.8);
+// 	color: $white;
+// 	cursor: pointer;
+// 	display: none;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

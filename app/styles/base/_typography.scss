@@ -1,0 +1,27 @@
+// ==================================================
+// Typography
+// ==================================================
+
+$base-font-size: em(16px);
+$base-line-height: ($base-font-size * 1.5);
+
+// line-heights
+$lh-xl: em(40px);
+$lh-lg: em(32px);
+$lh-md: em(24px);
+$lh-sm: em(20px);
+$lh-xs: em(20px);
+
+// header-sizes
+$h1-size: em(36px);
+$h2-size: em(24px);
+$h3-size: em(21px);
+$h4-size: em(18px);
+
+// font-sizes
+$fz-lg: em(21px);
+$fz-md: em(16px);
+$fz-sm: em(13px);
+$fz-xs: em(11px);
+
+$base-spacing: $base-line-height;

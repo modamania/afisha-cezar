@@ -1,0 +1,42 @@
+// ==================================================
+// Veriables
+// ==================================================
+
+// Fonts
+$serif-font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'Geneva', sans-serif;
+
+$base-font-family: $serif-font-family;
+
+// Colors
+$soft-yellow: #f2f3ef;
+$paper-white: #fafafa;
+$light-gray: #9e9e9e;
+$gray-200: #f8f8f8; 
+$gray-300: #e5e5e5;
+$light-blue: #2196f3;
+$pink: #e91e63;
+$violet: #514275;
+
+// Action button colors
+$action-color--blue: $light-blue;
+$action-color--pink: $pink;
+
+$black: #2a2f2e;
+$white: #ffffff;
+
+$base-color: $black;
+$accident-color: $light-blue;
+$bg-color: $soft-yellow;
+
+// Default sizing
+$base-size: 16px;
+$base-max-width: 920px;
+$base-min-width: 720px;
+
+// Borders
+$base-border: 1px solid rgba($light-gray, 0.3);
+$base-radius: 2px;
+
+// Box shadows
+$shadow-sm: 0px 2px 4px 0px rgba(0,0,0,0.24), 
+						0px 0px 2px 0px rgba(0,0,0,0.12); 
