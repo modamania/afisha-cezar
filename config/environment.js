@@ -22,8 +22,8 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
       'font-src': "'self' http://fonts.gstatic.com",
-      'connect-src': "'self' 'unsafe-inline'",
-      'img-src': "'self' 'unsafe-eval' 'unsafe-inline' data: http://ru.hellomagazine.com",
+      'connect-src': "'self' 'unsafe-inline' http://188.166.28.116/",
+      'img-src': "'self' 'unsafe-eval' 'unsafe-inline' data: http://ru.hellomagazine.com http://188.166.28.116/",
       'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com",
       'media-src': "'self'"
     }
@@ -50,7 +50,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.apiHost = 'http://188.166.28.116';
+    ENV.baseURL = '/cezar';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
