@@ -20,10 +20,6 @@
 
 		&:not(:first-child) { // Make the 3 col without margin first el
 			margin-left: 24px; 
-			
-			input {
-				padding-bottom: 3px; // Input type=date is not equal type=text, this fixed it
-			}
 		}
 	}
 }

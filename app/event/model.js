@@ -6,9 +6,9 @@ export default DS.Model.extend({
     review: 		attr('string'),
     cover: 			attr('string'),
     date: 			attr('string'),
-    age: 			attr('number'), 
+    age: 			attr('number', 	{ defaultValue: '16' }), 
     promoter: 		attr('string'),
-    created_at: 	attr('string'), 
-    visible: 		attr('boolean'),
-    special: 		attr('boolean')
+    created_at: 	attr('string', 	{ defaultValue: '0001-01-01T00:00:00.000000+10:00' }), 
+    visible: 		attr('boolean', { defaultValue: true }),
+    special: 		attr('boolean', { defaultValue: false })
 }); 
