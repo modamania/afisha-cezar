@@ -50,7 +50,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.apiHost = 'http://188.166.28.116';
+    ENV.apiHost = 'http://188.166.28.116:8888';
     ENV.baseURL = '/cezar';
     ENV.locationType = 'hash';
   }
