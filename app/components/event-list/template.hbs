@@ -1,5 +1,5 @@
 <ul class="event__list">
-	{{#each model as |event|}}
+	{{#each model key="id" as |event|}}
 		{{event-list-item event=event}}
 	{{/each}}
 </ul>
