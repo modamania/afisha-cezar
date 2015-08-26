@@ -15,12 +15,13 @@ export default EmberUploader.FileField.extend({
 
     if (!Ember.isEmpty(files)) {
       let promise = uploader.upload(files[0]);
-      
+
       promise.then((data) => {
-        this.set('cover', data.filename);
+        this.set('cover', data.file);
+        // console.log(data.file);
       }, function(error) {
         console.log('Ошбика згрузки файла');
-      })
-    }  
+      });
+    }
   }).observes('files')
-}); 
+});

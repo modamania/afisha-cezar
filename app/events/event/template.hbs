@@ -1,10 +1,10 @@
 <form id="event" {{action 'save' on='submit'}}>
 	<div class="wrapper paper">
 		<div class="event">
-			<div class="event__cover" style="background-image: url({{model.cover}})">
+			<div class="event__cover" style="background-image: url('http://10.0.1.35:8000/covers/{{model.cover}}')">
 				<div class="remove-cover" {{action 'removeCover' event}}>&times;</div>
 				<label class="upload-cover">
-					{{cover-upload url="/http://188.166.28.116:8888/api/uploadcover"}}
+					{{cover-upload url="http://10.0.1.35:8000/api/upload" cover=model.cover}}
 					<span>Загрузить обложку</span>
 				</label>
 			</div>
@@ -37,9 +37,9 @@
 				<div class="flex">
 					<label>
 						{{input type="checkbox" name="model.special" checked=model.special}}
-					Выбор редакции</label>
+					Сделать главной</label>
 				</div>
 			</div>
-		</div>			
+		</div>
 	</div>
 </form>

@@ -4,8 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'cezar',
     environment: environment,
-    baseURL: '/cezar',
-    locationType: 'hash',
+    baseURL: '/',
+    locationType: 'auto',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -22,8 +22,8 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
       'font-src': "'self' http://fonts.gstatic.com",
-      'connect-src': "'self' 'unsafe-inline' http://188.166.28.116 http://188.166.28.116:8888",
-      'img-src': "'self' 'unsafe-eval' 'unsafe-inline' data: http://ru.hellomagazine.com http://188.166.28.116 http://188.166.28.116:8888",
+      'connect-src': "'self' 'unsafe-inline' http://10.0.1.35:8000",
+      'img-src': "'self' 'unsafe-eval' 'unsafe-inline' data: http://10.0.1.35:8000",
       'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com",
       'media-src': "'self'"
     }
@@ -31,10 +31,11 @@ module.exports = function(environment) {
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
-    // ENV.APP.LOG_ACTIVE_GENERATION = true;
-    ENV.APP.LOG_TRANSITIONS = true;
+    ENV.APP.LOG_ACTIVE_GENERATION = true;
+    // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.apiHost = 'http://10.0.1.35:8000';
   }
 
   if (environment === 'test') {
@@ -50,9 +51,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.apiHost = 'http://188.166.28.116:8888';
-    ENV.baseURL = '/cezar';
-    ENV.locationType = 'hash';
+    ENV.apiHost = 'http://localhost:8000';
+    ENV.baseURL = '';
+    ENV.locationType = 'none';
   }
 
   return ENV;
