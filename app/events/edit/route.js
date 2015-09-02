@@ -20,7 +20,7 @@ export default Ember.Route.extend({
 		cancel() {
 			this.transitionTo('events');
 		},
-		
+
 		removeCover() {
 			let model = this.modelFor('events/edit');
 			model.set('cover', '');

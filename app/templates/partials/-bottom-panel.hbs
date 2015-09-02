@@ -1,4 +1,6 @@
 <section class="event-settings">
+	{{!-- TODO: Сделать проверку опубликована ли запись --}}
+	<div class="table-link"><a class="btn btn--gray" href="http://188.166.46.25:8000/api/csv/{{model.id}}">Таблица соответствия</a></div>
 	<div class="event-settings__actions">
 		<button class="btn btn--gray" {{action 'cancel'}}>Отмена</button>
 		<input class="btn btn--blue" type="submit" form="event" value="Cохранить">

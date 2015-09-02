@@ -22,8 +22,8 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
       'font-src': "'self' http://fonts.gstatic.com",
-      'connect-src': "'self' 'unsafe-inline' http://10.0.1.35:8000",
-      'img-src': "'self' 'unsafe-eval' 'unsafe-inline' data: http://10.0.1.35:8000",
+      'connect-src': "'self' 'unsafe-inline' http://10.0.1.35:8000 http://localhost:8000 http://188.166.46.25:8000",
+      'img-src': "'self' 'unsafe-eval' 'unsafe-inline' data: http://10.0.1.35:8000 http://localhost:8000 http://188.166.46.25:8000",
       'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com",
       'media-src': "'self'"
     }
@@ -35,7 +35,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.apiHost = 'http://10.0.1.35:8000';
+    ENV.apiHost = 'http://188.166.46.25:8000';
   }
 
   if (environment === 'test') {
@@ -51,9 +51,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.apiHost = 'http://localhost:8000';
-    ENV.baseURL = '';
-    ENV.locationType = 'none';
+    ENV.apiHost = 'http://188.166.46.25:8000';
+    ENV.locationType = 'hash';
   }
 
   return ENV;

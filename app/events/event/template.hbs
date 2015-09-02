@@ -1,10 +1,10 @@
 <form id="event" {{action 'save' on='submit'}}>
 	<div class="wrapper paper">
 		<div class="event">
-			<div class="event__cover" style="background-image: url('http://10.0.1.35:8000/covers/{{model.cover}}')">
+			<div class="event__cover" style="background-image: url('http://188.166.46.25:8000/{{model.cover}}')">
 				<div class="remove-cover" {{action 'removeCover' event}}>&times;</div>
 				<label class="upload-cover">
-					{{cover-upload url="http://10.0.1.35:8000/api/upload" cover=model.cover}}
+					{{cover-upload url="http://188.166.46.25:8000/api/cover" cover=model.cover}}
 					<span>Загрузить обложку</span>
 				</label>
 			</div>
@@ -20,7 +20,7 @@
 					{{textarea class="textarea textarea--no-resize" placeholder="Краткое описание события..." rows="1" value=model.review}}
 				</div>
 
-				<div class="event__settings">
+				<div class="event__description">
 					<div class="input-container">
 						<label class="label label--sm">Дата проведения</label>
 						{{input type="text" class="input-text" value=model.date}}
@@ -34,12 +34,28 @@
 						{{input type="number" class="input-text" value=model.age}}
 					</div>
 				</div>
-				<div class="flex">
+
+				<div class="flex event__settings">
 					<label>
 						{{input type="checkbox" name="model.special" checked=model.special}}
 					Сделать главной</label>
+					<label>
+						{{input type="checkbox" name="model.visible" checked=model.visible}}
+					Опубликовано</label>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<div class="wrapper paper sections">
+			<h4>Секции</h4>
+			<div class="section">
+				<ul class="section__list">
+					{{#each model.place.sections as |section|}}
+						{{section-item section=section}}
+					{{/each}}
+				</ul>
+			</div>
+	</div>
+
 </form>

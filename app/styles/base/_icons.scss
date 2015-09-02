@@ -16,67 +16,59 @@
 		float: left;
 	}
 
-	// 24px icons 
+	// 24px icons
 
 	.icon--dashboard {
-		background-image: url(/cezar/assets/icons/24px/dashboard.svg);
+		background-image: url(icons/24px/dashboard.svg);
 	}
 
 	.icon--user {
-		background-image: url(/cezar/assets/icons/24px/user.svg);
+		background-image: url(icons/24px/user.svg);
 	}
-	
+
 	.icon--search {
-		background-image: url(/cezar/assets/icons/24px/search.svg);
+		background-image: url(icons/24px/search.svg);
 	}
 
 	.icon--checked {
-		background-image: url(/cezar/assets/icons/24px/checked.svg);
+		background-image: url(icons/24px/checked.svg);
 	}
 
 	.icon--checked-black {
-		background-image: url(/cezar/assets/icons/24px/checked-black.svg);
+		background-image: url(icons/24px/checked-black.svg);
 	}
 
 	.icon--plus {
-		background-image: url(/cezar/assets/icons/24px/plus.svg);
+		background-image: url(icons/24px/plus.svg);
 	}
 
 	.icon--plus-lg {
-		background-image: url(/cezar/assets/icons/24px/plus--lg.svg);	
+		background-image: url(icons/24px/plus--lg.svg);	
 	}
 
 	.icon--close {
-		background-image: url(/cezar/assets/icons/24px/close.svg);
+		background-image: url(icons/24px/close.svg);
 	}
 
 	.icon--close-black {
-		background-image: url(/cezar/assets/icons/24px/close-black.svg);
+		background-image: url(icons/24px/close-black.svg);
 	}
 
 // 48px icons
 
 .icon48--close-black {
-	background-image: url(/cezar/assets/icons/48px/close-black.svg);
+	background-image: url(icons/48px/close-black.svg);
 }
 
 .icon48--checked-black {
-	background-image: url(/cezar/assets/icons/48px/checked-black.svg);
+	background-image: url(icons/48px/checked-black.svg);
 }
 
 .icon48--edit-black {
-	background-image: url(/cezar/assets/icons/48px/edit-black.svg);
+	background-image: url(icons/48px/edit-black.svg);
 }
 
 // additional classes
 .unchecked {
 	opacity: 0.2;
 }
-
-
-
-
-
-
-
-

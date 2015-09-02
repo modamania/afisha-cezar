@@ -3,9 +3,9 @@
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	padding: 12px 24px; 
+	padding: 12px 24px;
 	background-color: $gray-200;
-	box-shadow: 0 -1px 0 rgba(0, 0 , 0, 0.08 ), 
+	box-shadow: 0 -1px 0 rgba(0, 0 , 0, 0.08 ),
 							0 0 8px rgba(0, 0, 0, 0.12); // top border
 }
 
@@ -14,4 +14,8 @@
 	button {
 		margin-right: 12px;
 	}
+}
+
+.table-link {
+	float: left;
 }
