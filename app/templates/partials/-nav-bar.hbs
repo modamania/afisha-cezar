@@ -4,6 +4,10 @@
 		{{link-to 'Концерты' 'events' class="nav-bar__link"}}
 	</nav>
 	<div class="nav-bar__user-menu">
-		<a href="#" class="nav-bar__link icon icon--user">Выйти</a>
+		{{#if session.isAuthenticated}}
+			<a href="#" class="nav-bar__link icon icon--user" {{action 'invalidateSession'}}>Выйти</a>
+			{{else}}
+			{{#link-to 'login'}}Войти{{/link-to}}	
+		{{/if}}
 	</div>
 </div>

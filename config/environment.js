@@ -29,6 +29,21 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['simple-auth'] = {
+  crossOriginWhitelist: ['*'],
+  authorizer: 'simple-auth-authorizer:token',
+  };
+
+  ENV['simple-auth-token'] = {
+    serverTokenEndpoint: 'http://188.166.46.25:8000/login',
+    identificationField: 'identification',
+    passwordField: 'password',
+    tokenPropertyName: 'token',
+    authorizationPrefix: 'Bearer ',
+    authorizationHeaderName: 'Authorization',
+    headers: {}
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     ENV.APP.LOG_ACTIVE_GENERATION = true;

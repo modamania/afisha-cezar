@@ -10,7 +10,8 @@ Router.map(function() {
     this.route('edit', { path: ':event_id/edit' });
     this.route('new');
   });
-  this.route('registration', {resetNamespace: true});
+  this.route('registration');
+  this.route('login');
 });
 
 export default Router;

@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
 	actions: {
 		createUser() {
 			$.post(ENV.apiHost + '/registration', {
-				username: this.get('userName'),
+				email: this.get('userEmail'),
 				password: this.get('userPassword'),
 				name: this.get('userName')
 			});
